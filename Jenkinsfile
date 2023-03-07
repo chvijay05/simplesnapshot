@@ -24,7 +24,7 @@ pipeline {
        stage('Deploy Code') {
 	   when
 	   {
-	   branch "stage"
+	   branch "master"
 	   	   }
           steps {
                sh "mvn tomcat10:deploy"
