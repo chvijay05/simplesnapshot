@@ -4,10 +4,7 @@ pipeline {
        stage('Build Code') {
            steps {
                sh "mvn clean package"
-
-               echo "Building the new Artifact for project"
-
-               echo "Building the Artifact for project"
+               echo "Building Artifact for project"
 
                
            }
@@ -27,10 +24,10 @@ pipeline {
        stage('Deploy Code') {
 	   when
 	   {
-	   branch "master"
+	   branch "stage"
 	   	   }
           steps {
-               sh "mvn tomcat9:deploy"
+               sh "mvn tomcat10:deploy"
                echo "Deploying Code"
                
           }
