@@ -12,5 +12,6 @@ String version=resource.getString("version");%>
  <h4>First CICD with Ansible flow is complted for JAN batch</h4>
  <h5> Ansible is completed with roles concept</h5>
  <h5> docker biuld with jenkins concept completed</h5>
+ <h5> Thank you</h5>
  </body>
 </html>
